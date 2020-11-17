@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myScripts.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cabecera">
+            <h2 class="titulo">Captura de comentarios</h2>
+        </div>
+        <div id="subCabecera">
+            <!--PUSE ESTILOS EN ALGUNAS ETIQUETAS DIRECTAMENTE AQUI YA QUE SOLO SON 1 o 2 PEQEUÑOS CAMBIOS QUE NO VI NECESARIO CREARLES UNA CLASE-->
+            <p style="margin-left: 5px;"><a href="login.html">Regresar al Login</a></p>
+        </div>
+        <div class="contenedor2">
+            <div id="columna1">
+                <img class="imagen" src="imagenes/mensajeIcon.png" alt="Mensajes">
+                <h2 style="text-align: center;">Imagen</h2>
+            </div>
+            <div id="columna2">
+                <h2 style="padding-left: 40%;">Comentarios</h2>
+                <div class="divComentarios">
+                    <h3>Deja un comentario</h3><br>
+                    <form>
+                        <input type="text" id="nombre">Nombre<br><br>
+                        <input type="text" id="mail">Email (No sera publicado)<br><br>
+                        <input type="text" id="website">Website<br><br>
+                        <textarea id="comemnts" name="comments" rows="8" cols="60"></textarea><br>
+                        <button onclick="showdetails()">Enviar este comentario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="myScripts.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <h1>Usuarios registrados</h1>
+        </div>
+        <br>
+        <div>
+            <h3>Entre aqui usando su usuario y contraseña</h2>
+        </div>
+        <br>
+        <div>
+            <form name="userForm" >
+                <label for="user">Nombre de usuario:</label><br>
+                <input type="text" id="user" name="user" ><br>
+                <label for="pass">Contraseña:</label><br>
+                <input type="password" id="pass" name="pass"><br><br>
+                <button type="submit" value="Entrar" onsubmit="validateForm()">Entrar</button>
+              </form>
+              <h3>¿Olvido su nombre de usuario?</h2>
+              <button type="submit" onclick="sendingEmail()">Si, ayudame a entrar</button> 
+        </div>
+    </div>
+</body>
+
+</html>
